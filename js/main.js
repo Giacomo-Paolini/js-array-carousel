@@ -28,7 +28,7 @@ next.addEventListener("click", function () {
     currentImage++;
 
     if (currentImage == album.length) {
-        currentImage == 0;
+        currentImage = 0;
     }
 
     album[currentImage].classList.remove("hidden");
@@ -38,10 +38,11 @@ next.addEventListener("click", function () {
 back.addEventListener("click", function () {
     album[currentImage].classList.remove("slide");
     album[currentImage].classList.add("hidden");
+
     currentImage--;
 
-    if (currentImage == album.length) {
-        currentImage == 0;
+    if (currentImage < 0) {
+        currentImage = album.length-1;
     }
 
     album[currentImage].classList.remove("hidden");
