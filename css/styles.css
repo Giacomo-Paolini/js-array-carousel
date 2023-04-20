@@ -1,0 +1,22 @@
+.carousel {
+    max-width: 1200px;
+    height: 400px;
+}
+
+.slide {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    text-align: center;
+    width: 100px;
+    height: 50px;
+}
